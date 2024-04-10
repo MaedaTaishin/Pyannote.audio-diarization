@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Diarization</title>
+    <style>
+        #audio-container {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="upload-form">
+        <input type="file" id="audio-file" accept=".wav,.mp3" required>
+        <button type="submit">Upload Audio</button>
+    </form>
+
+    <div id="audio-container" style="display: none;">
+        <audio controls id="audio" preload="auto"></audio>
+    </div>
+    
+    <button id="perform-diarization" style="display: none;">Perform Diarization</button>
+    
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
